@@ -258,6 +258,10 @@ public class GraphMatrix {
         System.out.println("Path: " + C);
 
     }
+    // to do
+    public ArrayList<Integer> nearestNeighbor(){
+        return new ArrayList<>();
+    }
 
 }
 

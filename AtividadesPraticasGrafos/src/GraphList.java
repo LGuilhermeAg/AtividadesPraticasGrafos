@@ -144,12 +144,46 @@ public class GraphList {
 
     public ArrayList<Integer> dfs(int s) {
         // TDOO tarefa da parte 1
-        return new ArrayList<>();
+        // Initialization
+        int[] desc = new int[this.countNodes];
+        ArrayList<Integer> S = new ArrayList<>();
+        S.add(s);
+        System.out.println("S: " + S);
+        ArrayList<Integer> R = new ArrayList<>();
+        R.add(s);
+        System.out.println("R: " + R);
+        desc[s] = 1;
+        for(int i=0;i<this.countNodes;i++){
+            System.out.println(", " + desc[i]);
+        }
+        // Main loop
+        while (S.size() > 0) {
+            System.out.println("S: " + S);
+            int u = S.get(S.size() - 1);
+            System.out.println("U: " + u);
+            boolean unstack = true;
+            for (int v = 0; v < this.adjList.get(u).size(); ++v) {
+                System.out.println("Verificando (u, v) para v: " + this.adjList.get(u).get(v).toString());
+                if (this.adjList.get(u).get(v).getWeight() != 0 && desc[v] != 1) {
+                    System.out.println("Encontrado novo nó v: " + this.adjList.get(u).get(v).toString());
+                    S.add(v);
+                    R.add(v);
+                    desc[v] = 1;
+                    unstack = false;
+                    break;
+                }
+            }
+            if (unstack) {
+                S.remove(S.size() - 1);
+            }
+        }
+        return R;
     }
 
     public boolean connected() {
+        //to do
         // TDOO tarefa da parte 1
-        return false;
+        return this.dfs(0).size() == this.countNodes;
     }
 
     public boolean isOriented() {
@@ -188,6 +222,16 @@ public class GraphList {
                 dfsRecAux(v, desc, R);
             }
         }
+    }
+
+    public ArrayList<Integer> dijkstra(int s, int t){
+    //to do
+        return new ArrayList<>();
+    }
+
+    public ArrayList<Integer> BellmanFord(int s, int t){
+       // to do 
+       return new ArrayList<>();
     }
 
     public ArrayList<Edge> kruskal() {

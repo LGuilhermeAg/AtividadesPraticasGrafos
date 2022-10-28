@@ -1,18 +1,3 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Trabalho | Atividades práticas com Grafos em Java
+Este é um trabalho desenvolvido para a disciplina de AEDSIII ministrada pelo professor George Fonseca ao curso de Sistemas de Informação da UFOP, de autoria do aluno Luís Guilherme Lopes Aguiar matriculado 19.1.8025
+> Este código apresenta as dependências básicas de uma biblioteca de Grafos em Java, e seu autor pretende completar todo o solicitado (sincronização das classes de matriz e lista, implementação de caminhos mínimos, interatividade com o usuário e solução de labirintos com grafos), apesar deste repositório não apresentar todas estas funcionalidades no presente momento de acordo com a densa disponibilidade do desenvolvedor. Agradeço a compreensão e nos vemos ao longo das iterações!
